@@ -1,0 +1,55 @@
+//
+Parameters
+
+
+//
+
+global variables 
+
+
+function resetGame (){
+        generate random targetscore  between 19 &120
+        reset total score = 0 
+        generate new random values for the crytals beween 1 - 12
+        call startGame()
+}
+
+
+function display() {
+        display targetscore 
+        display total score value 
+        call main game()
+}
+
+function mainGame(){
+        $(picture1).onclick.{
+                totalscore = totalscore + picture1.points
+        }
+
+        $(picture2).onclick.{
+                totalscore = totalscore + picture2.points
+        }
+        $(picture3).onclick.{
+                totalscore = totalscore + picture3.points
+        }
+        $(picture4).onclick.{
+                totalscore = totalscore + picture4.points
+        }
+
+        win();
+        lose();
+}
+
+function win() {
+        if totalscore == targetscore {
+                alert you win
+        }
+        resetGame ()
+}
+
+function lose() {
+        if totalscore > targetscore{
+                alert you lose
+        }
+        resetGame();
+}

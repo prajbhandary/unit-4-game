@@ -1,0 +1,26 @@
+h1 {
+    text-align: center;
+    padding: 50px;
+}
+h1 span{
+    background-color:#c78256;
+    display: inline;
+}
+
+body{
+    background-size: cover;
+ 
+}
+
+.counter{
+
+    text-align: center;
+    font-weight: bold;
+}
+
+img{
+    margin-right: 10px;
+    width: 200px;
+    height: 270px;
+    padding-bottom: 4px;
+  }
